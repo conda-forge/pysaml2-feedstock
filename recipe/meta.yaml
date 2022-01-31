@@ -27,6 +27,8 @@ requirements:
     - pytz
     - requests >=1.0.0
     - six
+    - importlib_resources # [py<39]
+    - xmlschema >=1.2.1
 
 test:
   imports:
