@@ -1,5 +1,5 @@
 {% set name = "pysaml2" %}
-{% set version = "6.1.0" %}
+{% set version = "7.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,26 +7,27 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pysaml2-{{ version }}.tar.gz
-  sha256: f7b80553f84bf4e3c823266d2243ab6c0303785648402fbbc1c13a14737876d4
+  sha256: 6d446de515dcb3a88ac52f2679cc7c6c46362239dbec94996d78168ac30ee3d4
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
   run:
     - cryptography >=1.4
     - defusedxml
     - pyopenssl
-    - python >=3.6
+    - python
     - python-dateutil
     - pytz
     - requests >=1.0.0
     - six
+    - importlib_resources  # [py<39]
+    - xmlschema >=1.2.1
 
 test:
   imports:
