@@ -16,12 +16,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
   run:
     - cryptography >=1.4
     - defusedxml
     - pyopenssl
-    - python >=3.6
+    - python
     - python-dateutil
     - pytz
     - requests >=1.0.0
