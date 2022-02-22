@@ -11,23 +11,25 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
+  noarch: python
   number: 0
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - cryptography >=1.4
     - defusedxml
     - pyopenssl
-    - python
+    - python >=3.6
     - python-dateutil
     - pytz
     - requests >=1.0.0
     - six
-    - importlib_resources  # [py<39]
+    - importlib_resources
     - xmlschema >=1.2.1
+    - setuptools
 
 test:
   imports:
