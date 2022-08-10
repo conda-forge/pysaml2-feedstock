@@ -1,5 +1,5 @@
 {% set name = "pysaml2" %}
-{% set version = "7.1.1" %}
+{% set version = "7.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pysaml2-{{ version }}.tar.gz
-  sha256: 8326b041259f71da4be713df8ee6b5406247dac8799ff5e4a514ac5bdded5ac7
+  sha256: 256bcea8e2a26e5bd06efc501e18254439fa96e4ff08cff7d64063ed29e21ba6
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
