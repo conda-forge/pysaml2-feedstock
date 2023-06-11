@@ -1,11 +1,11 @@
-About pysaml2
-=============
+About pysaml2-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysaml2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://idpy.org
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysaml2-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python implementation of SAML Version 2 Standard
 
