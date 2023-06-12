@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - poetry-core >=1.0.0
   run:
     - importlib-metadata >=1.7.0
     - importlib-resources *
@@ -43,6 +44,7 @@ test:
 
 about:
   home: https://idpy.org
+  dev_url: https://github.com/IdentityPython/pysaml2
   summary: Python implementation of SAML Version 2 Standard
   license: Apache-2.0
   license_file: LICENSE
