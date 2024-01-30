@@ -1,5 +1,5 @@
 {% set name = "pysaml2" %}
-{% set version = "7.4.2" %}
+{% set version = "7.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pysaml2-{{ version }}.tar.gz
-  sha256: 2bc5147b3b2f902a9131bf08240c068becea29994aafb7654a63d7270ac5b63b
+  sha256: f36871d4e5ee857c6b85532e942550d2cf90ea4ee943d75eb681044bbc4f54f7
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -21,17 +21,17 @@ requirements:
     - poetry-core >=1.0.0
   run:
     - importlib-metadata >=1.7.0
-    - importlib-resources *
+    - importlib-resources
     - cryptography >=3.1
-    - defusedxml *
-    - pyopenssl *
+    - defusedxml
+    - pyopenssl
     - python >=3.6
-    - python-dateutil *
-    - pytz *
+    - python-dateutil
+    - pytz
     - requests >=2.0.0,<3.0.0
     - six
     - importlib_resources
-    - xmlschema >=1.2.1
+    - xmlschema >=2.0.0,<3.0.0
     - setuptools
 
 test:
